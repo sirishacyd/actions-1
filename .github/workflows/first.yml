@@ -1,24 +1,24 @@
-name: My First Workflow
+# name: My First Workflow
 
-on: push
+# on: push
 
-jobs:
-  first_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
+# jobs:
+#   first_job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Repo
+#         uses: actions/checkout@v4
 
-      - name: List and Read file
-        run: |
-            echo "My first GitHub Actions"
-             ls -ltra
-             cat README.md
-      - name: List and Read file
-        run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+#       - name: List and Read file
+#         run: |
+#             echo "My first GitHub Actions"
+#              ls -ltra
+#              cat README.md
+#       - name: List and Read file
+#         run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
 
-    #   - name: List Files
-    #     run: ls
+#     #   - name: List Files
+#     #     run: ls
 
-    #   - name: Read File
-    #     run: cat README.md
+#     #   - name: Read File
+#     #     run: cat README.md
